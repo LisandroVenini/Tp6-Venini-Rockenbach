@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: CalculosTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.17 s <<< FAILURE! - in CalculosTest
+CalculosTest.testIntegracion  Time elapsed: 0.008 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: La resta de 4 y 2 debería ser 2 ==> expected: <1.0> but was: <2.0>
+	at CalculosTest.testIntegracion(CalculosTest.java:42)
+
