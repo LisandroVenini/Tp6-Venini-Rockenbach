@@ -1,0 +1,7 @@
+Feature: suma de dos numeros 
+
+Scenario: Sumar dos números
+    Given que tengo una calculadora
+    When sumo 2 y 2
+    Then el resultado debe ser 4
+

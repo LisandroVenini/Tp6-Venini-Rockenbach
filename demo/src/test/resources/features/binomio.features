@@ -1,0 +1,6 @@
+Feature: Cuadrado del binomio
+
+  Scenario: Calcular el cuadrado del binomio
+    Given que tengo una calculadora
+    When calculo el cuadrado del binomio de 4 y 2
+    Then el resultado debe ser 36

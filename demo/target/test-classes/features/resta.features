@@ -1,0 +1,6 @@
+Feature: Resta de dos números
+
+  Scenario: Restar de dos números 
+    Given que tengo una calculadora
+    When resto 1 de 4
+    Then el resultado debe ser -3
