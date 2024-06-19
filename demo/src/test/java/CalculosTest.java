@@ -1,8 +1,14 @@
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.TestInstance.Lifecycle;
+import io.cucumber.junit.platform.engine.Cucumber;
+import static org.junit.jupiter.api.Assertions.*;
+// import org.junit.jupiter.api.extension.ExtendWith;
 
 import com.example.modelos.Calculos;
 
-import static org.junit.jupiter.api.Assertions.*;
+@Cucumber
+@TestInstance(Lifecycle.PER_CLASS)
 
 public class CalculosTest {
 
@@ -39,7 +45,7 @@ public class CalculosTest {
         double binomio = calc.CuadradoBinomio(a, b);
 
         assertEquals(6, suma, "La suma de 4 y 2 debería ser 6");
-        assertEquals(1, resta, "La resta de 4 y 2 debería ser 2");
+        assertEquals(2, resta, "La resta de 4 y 2 debería ser 2");
         assertEquals(36, binomio, "El cuadrado del binomio (4+2)^2 debería ser 36");
 
         // Verificando la interacción de los métodos
